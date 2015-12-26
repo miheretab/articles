@@ -1,43 +1,39 @@
-CakePHP
-=======
+Articles Features
+=================
+- Application is done in cakephp 2.x, as DB - MySQL
+- Simple signup(first name, last name, email with password)
+- Login
+- Password recovery
+- Edit password in account
+*******************************
+Two user types: User and Admin
+*******************************
+1) User
+-------
+- Users can register and when logged in can add/edit/activate/suspend/delete their own articles.
+- If article is active it can be shown publicly on the website to all users.
+- If article is suspended only the owner can see it, but it will not be shown on the public website.
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+2) Admin
+---------
+- Admin can see the list of/information of all users and suspend/activate/delete them
+- Admin can also see the list of all articles of all users and edit/activate/suspend/delete them.
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
-
-Some Handy Links
-----------------
-
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
-
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
-
-[API](http://api.cakephp.org) - A reference to CakePHP's classes
-
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
-
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
-
-[Community Center](http://community.cakephp.org) - A source for everything community related
-
-[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework
-
-[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference
-
-[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP
-
-Get Support!
+3) Visitors
 ------------
+- In the website, the visitors can see the list of active articles, and when clicking  on them go to  the article's  
+view page, where we will have the title and the content.
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
+4) User balance
+-----------------
+- Users can add money to their balance, for that they click "Add balance" button, and on that page fill in the 
+form with CC number, CVC, expiration date, first name and last name, choose the amount that they want to 
+add to their account and submit, and we are adding that  amount to their current balance (if successful  –  or 
+show error message otherwise)
+- Users can see their current balance when they are logged in.
 
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
+5) Cron
+--------
+- A small shell, to work as a cron job to run regularly, that charges the clients - by taking some amount from 
+their balance. It should simply decrease each users balance by some amount, as simple as that.
 
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
-
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
-
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
