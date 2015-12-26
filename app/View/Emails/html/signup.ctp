@@ -1,0 +1,1 @@
+You registered using this email to this site, If you do, please activate it using this <a href="<?php echo $url; ?>">link</a> .

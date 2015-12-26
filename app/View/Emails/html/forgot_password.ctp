@@ -1,0 +1,1 @@
+Here is a <a href="<?php echo $url; ?>">link</a> to reset your password.
