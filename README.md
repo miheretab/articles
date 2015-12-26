@@ -5,9 +5,8 @@ Articles Features
 - Login
 - Password recovery
 - Edit password in account
-*******************************
-Two user types: User and Admin
-*******************************
+- Two user types: User and Admin
+
 1) User
 -------
 - Users can register and when logged in can add/edit/activate/suspend/delete their own articles.
